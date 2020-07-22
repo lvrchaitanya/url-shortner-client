@@ -27,12 +27,14 @@ export default function Thetable() {
           {urls.map((item, ind) => {
             const redirectlink =
               "https://ulst.herokuapp.com/" + item.new;
+              const red =
+              "ulst.herokuapp.com/" + item.new;
             return (
               <tr>
                 <td> {ind + 1}</td>
                 <td> {item.old} </td>
                 <td>
-                  <a href={redirectlink}>{redirectlink}</a>
+                  <a href={redirectlink}>{red}</a>
                 </td>
                 <td> {item.count}</td>
               </tr>

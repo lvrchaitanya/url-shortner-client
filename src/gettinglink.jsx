@@ -23,7 +23,7 @@ export default function Gettinglink() {
         config
       )
       .then(res =>
-        settheurl("https://ulst.herokuapp.com/" + res.data)
+        settheurl("ulst.herokuapp.com/" + res.data)
       );
   }
 
@@ -55,7 +55,7 @@ export default function Gettinglink() {
 
           {newmyurl != 0 && (
             <h1>
-              <a href={newmyurl}>{newmyurl}</a>
+              <a href={"https://"+newmyurl}>{newmyurl}</a>
             </h1>
           )}
         </Form.Group>
